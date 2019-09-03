@@ -31,26 +31,40 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaX-WC-Qma"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCQ-GG-BQ7">
-                                <rect key="frame" x="176" y="317" width="62" height="30"/>
-                                <state key="normal" title="NOW ME"/>
-                                <connections>
-                                    <action selector="button2Tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JFm-4F-YHD"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cij-Hi-dmS">
+                                <rect key="frame" x="156" y="433" width="102" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y8d-OU-xqf">
+                                <rect key="frame" x="156" y="488" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="E7w-Y8-NRd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="mCQ-GG-BQ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RaO-Vh-A4j"/>
-                            <constraint firstItem="bTC-Ut-02e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XOS-D0-M6T"/>
-                            <constraint firstItem="mCQ-GG-BQ7" firstAttribute="top" secondItem="bTC-Ut-02e" secondAttribute="bottom" constant="202" id="YeO-0y-xDN"/>
-                            <constraint firstItem="PyI-Z0-Fug" firstAttribute="top" secondItem="bTC-Ut-02e" secondAttribute="bottom" constant="79" id="ZXn-CX-2Wq"/>
-                            <constraint firstItem="bTC-Ut-02e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jkh-ee-afP"/>
-                            <constraint firstItem="PyI-Z0-Fug" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yYJ-Op-4gh"/>
+                            <constraint firstItem="y8d-OU-xqf" firstAttribute="top" secondItem="Cij-Hi-dmS" secondAttribute="bottom" constant="25" id="0FT-aU-2TN"/>
+                            <constraint firstItem="bTC-Ut-02e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Yu-lU-Jdc"/>
+                            <constraint firstItem="Cij-Hi-dmS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="21F-2W-zfc"/>
+                            <constraint firstItem="bTC-Ut-02e" firstAttribute="centerX" secondItem="PyI-Z0-Fug" secondAttribute="centerX" id="7H5-8Y-ihV"/>
+                            <constraint firstItem="bTC-Ut-02e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="UrB-jq-WaN"/>
+                            <constraint firstItem="y8d-OU-xqf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="Z5r-Tj-dTd"/>
+                            <constraint firstItem="y8d-OU-xqf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eK2-nK-elC"/>
+                            <constraint firstItem="Cij-Hi-dmS" firstAttribute="centerX" secondItem="y8d-OU-xqf" secondAttribute="centerX" id="gVI-1C-VDF"/>
+                            <constraint firstItem="PyI-Z0-Fug" firstAttribute="top" secondItem="bTC-Ut-02e" secondAttribute="bottom" constant="79" id="gvI-lJ-mmc"/>
+                            <constraint firstItem="Cij-Hi-dmS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m6W-mf-DJe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="Cij-Hi-dmS" id="IPI-hX-ry0"/>
+                        <outlet property="text2" destination="y8d-OU-xqf" id="TRd-jy-NZp"/>
                         <outlet property="theLabel" destination="bTC-Ut-02e" id="ORa-LZ-8wb"/>
                     </connections>
                 </viewController>
