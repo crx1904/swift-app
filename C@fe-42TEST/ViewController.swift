@@ -10,7 +10,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var theLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
@@ -19,17 +19,24 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
-     
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let addition = true
         
-    }
-
-
+        if addition {
+            
+            theLabel.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+            
+        } else {
+            theLabel.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
+        
+        
+        func viewDidLoad() {
+            super.viewDidLoad()
+            // Do any additional setup after loading the view.
+            
+        }
+        
+        
 }
 
+}
